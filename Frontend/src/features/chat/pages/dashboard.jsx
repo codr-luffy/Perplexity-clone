@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { useSelector } from "react-redux";
-import { useChat } from "remark-gfm";
+import { useChat } from "../hooks/useChat.js";
+import remarkGfm from "remark-gfm";
 
 const Dashboard = () => {
   const chat = useChat();
